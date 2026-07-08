@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Expo57 Fetch Repro",
+    "slug": "expo57-fetch-corruption-repro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "io.hucksters.fetchrepro"
+    }
+  }
+}
