@@ -218,7 +218,7 @@ async function probeWithXhr(url: string): Promise<ProbeResult> {
 
 function ReproHarness() {
   const [url, setUrl] = useState(DEFAULT_URL);
-  const [attemptCountText, setAttemptCountText] = useState('10');
+  const [attemptCountText, setAttemptCountText] = useState('5');
   const [running, setRunning] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [fetchResult, setFetchResult] = useState<ProbeResult | null>(null);
@@ -234,10 +234,10 @@ function ReproHarness() {
   const stressAttempts = useMemo(() => {
     const parsed = Number.parseInt(attemptCountText, 10);
     if (Number.isNaN(parsed) || parsed < 1) {
-      return 10;
+      return 5;
     }
 
-    return Math.min(parsed, 100);
+    return Math.min(parsed, 20);
   }, [attemptCountText]);
 
   const onRunFetch = async () => {
