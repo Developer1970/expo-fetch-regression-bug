@@ -5,12 +5,18 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "android": {
       "package": "io.hucksters.fetchrepro"
-    }
+    },
+    "plugins": [
+      [
+        "./node_modules/expo-splash-screen/app.plugin.js",
+        {
+          "image": "./assets/logo.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#f7f5f5"
+        }
+      ]
+    ]
   }
 }
