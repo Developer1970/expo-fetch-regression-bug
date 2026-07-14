@@ -1,4 +1,4 @@
-# Expo 57 Fetch Regression Repro (with RTK Query)
+# Expo 57 RTK Query fetchBaseQuery regression repro
 
 This repository reproduces large-response parsing failures on Android in Expo SDK 57 and compares four paths in a single app:
 
